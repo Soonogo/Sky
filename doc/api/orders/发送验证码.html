@@ -112,20 +112,41 @@ table th, table td {
         <h2>发送验证码</h2>
         <h3>POST /api/v1/validation_codes</h3>
 
+          <h3>Parameters</h3>
+          <table class="parameters table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <span class="name">email</span>
+                </td>
+                <td>
+                  <span class="description">Email</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
 
           <h3>Request</h3>
 
             <h4>Headers</h4>
             <pre class="request headers">Version: HTTP/1.0
+Content-Type: application/json
 Host: example.org
-Content-Type: application/x-www-form-urlencoded
 Cookie: </pre>
 
           <h4>Route</h4>
           <pre class="request route highlight">POST /api/v1/validation_codes</pre>
 
 
+            <h4>Body</h4>
+            <pre class="request body">{"email":"1@qq.com"}</pre>
 
 
             <h3>Response</h3>
@@ -136,15 +157,13 @@ X-Content-Type-Options: nosniff
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 Referrer-Policy: strict-origin-when-cross-origin
-Content-Type: application/json; charset=utf-8
+Content-Type: text/html
 Cache-Control: no-cache
-X-Request-Id: 51380345-06c8-4b6d-b793-0a7dd45e1934
-X-Runtime: 0.113531
-Content-Length: 39</pre>
+X-Request-Id: d9c40f55-cacb-42d6-857c-74a4bbb1b0ac
+X-Runtime: 0.188572
+Content-Length: 0</pre>
             <h4>Status</h4>
-            <pre class="response status">400 Bad Request</pre>
-              <h4>Body</h4>
-              <pre class="response body">[binary data]</pre>
+            <pre class="response status">200 OK</pre>
       </div>
     </div>
   </body>
